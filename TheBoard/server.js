@@ -60,3 +60,7 @@ app.get("/api/users", function (req, res) {
 
 var server = http.createServer(app);
 server.listen(3000);
+
+//SOCKET IO INTEGRATION
+var updater = require("./updater");
+updater.init(server);

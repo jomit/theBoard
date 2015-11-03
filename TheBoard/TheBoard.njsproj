@@ -42,10 +42,10 @@
     <Compile Include="gruntfile.js" />
     <Compile Include="public\js\notesView.js" />
     <Compile Include="server.js" />
+    <Compile Include="updater\index.js" />
     <Content Include=".bowerrc" />
     <Content Include="views\login.vash" />
     <Content Include="views\register.vash" />
-    <None Include="nodeboard.pubxml" />
     <Content Include="package.json" />
     <Content Include="public\css\site.css" />
     <Content Include="public\images\note-blue.png" />
@@ -65,6 +65,7 @@
     <Folder Include="controllers\" />
     <Folder Include="data\" />
     <Folder Include="auth\" />
+    <Folder Include="updater\" />
     <Folder Include="public\" />
     <Folder Include="public\css\" />
     <Folder Include="public\images\" />
