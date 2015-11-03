@@ -1,2 +1,2 @@
 # theBoard
-Code from Pluralsight course "Node.js for .NET Developer"
+Code from Pluralsight course "Node.js for .NET Developers"
