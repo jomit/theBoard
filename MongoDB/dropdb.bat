@@ -1,0 +1,1 @@
+mongo <dbname> --eval "db.dropDatabase()"

@@ -1,0 +1,31 @@
+﻿@html.extend('layout', function(model) {
+  @html.block("body",function(model){
+	@if (model.error){
+<p class="text-error">Error occured: @model.error</p>
+	}
+<div class="row">
+    <div class="list-group col-lg-6">
+        @model.categories.forEach(function(category){
+        <div>
+            <a href="/notes/@category.name" class="list-group-item list-group-item-info">
+                <span class="badge">@(category.notes ? category.notes.length : 0)</span>@category.name
+            </a>
+        </div>
+        })
+    </div>
+</div>
+
+<div class="row">
+
+    @if (model.createCategoryError) {
+    <p class="text-warning">@model.createCategoryError</p>
+    }
+
+    <form action="/newCategory" role="form" method="post" class="form-inline">
+        <input type="text" name="categoryName" class="form-control" placeholder="category name" />
+        <input type="submit" value="New Category" class="btn btn-primary" />
+    </form>
+</div>
+
+  })
+})

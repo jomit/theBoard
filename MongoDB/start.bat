@@ -1,0 +1,1 @@
+mongod --httpinterface --dbpath ./data --rest
